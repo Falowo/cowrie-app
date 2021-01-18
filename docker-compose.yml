@@ -1,0 +1,17 @@
+services:
+  client:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - "/app/node_modules"
+      - "./:/app"
+    links:
+      - redis
+  redis:
+    image: redis
+volumes:
+  logvolume01: {}
