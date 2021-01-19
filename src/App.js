@@ -38,7 +38,7 @@ class Sixteen extends React.Component {
     return (
 
       <Container className="text-center" >
-        <h1>Oracle des cauries</h1>
+        <h1>Oracle des 16 cauries</h1>
         <Row md={6} className="justify-content-md-center">
           <Col xs={3}>
             {this.renderCowrie(0)}
